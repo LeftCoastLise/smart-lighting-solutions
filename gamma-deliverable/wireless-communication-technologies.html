@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Wireless Communication Technologies</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: times;
+                font-size: 16;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+main {
+            flex: 1;
+            padding: 20px;
+            width: 60%;
+            margin: 0 auto;
+        }
+        h1 {
+            font-family: Helvetica, sans-serif;
+            font-size: 24px;
+            color:#033772
+        }
+        h2 {
+            font-family: Times;
+            font-size: 22px;
+            color:#033772
+        }
+        main{
+            flex: 1;
+            padding: 20px;
+            width: 60%;
+            margin: 0 auto;
+        }
+        a {
+            color: #1a83c4;
+            text-decoration: none;
+        } 
+        a:hover {
+            color: #f212b6;
+        }
+</style>
+        
+        </head>
+        <header style="display: flex; justify-content: flex-end; padding: 10px;">
+          <button onclick="window.history.back()" style="background-color: #033772; color: rgb(245, 239, 245); border: none; padding: 10px 15px; border-radius: 10px; cursor: pointer; font-size: 16px;">
+              ← Go Back
+          </button>
+        </header> 
+        <body>
+            <h1 id="wireless-communication-technologies">Wireless Communication Technologies</h1>
+<p>Wireless technologies are used in home automation products. Wireless technology transmits information between a smart lighting system and its control center.</p>
+<p>There are many different wireless communication protocols. Not all products share the same protocol. Therefore, smart lighting products rely on a smart hub to connect a smart light system to its controlling device. In a smart lighting system, a controlling device is an app on a smart phone, a remote control, a smart wall switch, or a voice assistant.</p>
+<p>Smart controls communicate with smart lighting through:</p>
+  <ul>
+    <li>Voice assistants use a variety of protocols.</li>
+    <li>Smart phones use Wi-Fi or Bluetooth to connect to smart devices.</li>
+    <li>The example below shows how a smart hub bridges the communication between the voice assistant, smart phone, and smart lighting product that uses the <a href="https://www.digi.com/solutions/by-technology/zigbee-wireless-standard">Zigbee</a> protocol.</li>
+    <img src="Gamma_Figure2(1).jpg" alt="Smart Hub Communication Diagram with Zigbee protocol">
+  </ul>
+<br>
+  <h2 id="wireless-communication-protocols">Wireless Communication Protocols</h2>
+  <p>Common wireless technology protocols used in smart lighting:</p>
+  <ul>
+    <li><a href="https://csa-iot.org/all-solutions/matter/">Matter</a></li>
+    <li><a href="https://www.digi.com/solutions/by-technology/zigbee-wireless-standard">Zigbee</a></li>
+    <li><a href="https://z-wavealliance.org/">Z-Wave</a></li>
+    <li><a href="https://www.bluetooth.com/learn-about-bluetooth/tech-overview/">Bluetooth Low Energy (BLE)</a></li>
+    <li><a href="https://www.wi-fi.org/">Wi-Fi</a></li>
+    <li><a href="https://www.threadgroup.org/What-is-Thread/Overview">Thread</a></li>
+    <li><a href="https://www.lutron.com/en-US/pages/default.aspx">Lutron</a> uses their own proprietary standard called <a href="https://assets.lutron.com/a/documents/clear_connect_technology_whitepaper.pdf">ClearConnect</a>.</li>
+  </ul>
+  <br>
+  <p><strong>Smart Lighting Products and their Communication Protocols:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Product Type</th>
+<th>Product Line</th>
+<th>Protocols</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>Matter<br> 2.4ghz</td>
+<td>Zigbee<br>2.4ghz</td>
+<td>Z-wave<br>900Mhz</td>
+<td>Bluetooth<br> 2.4ghz</td>
+<td>Wi-Fi<br>2.4ghz</td>
+<td>Thread<br>2.4ghz</td>
+<td>Proprietary</td>
+</tr>
+<tr>
+<td>Smart Bulbs</td>
+<td><a href="https://www.philips-hue.com/en-us/explore-hue/works-with/matter">Philips Hue</a></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.lifx.com/collections/matter-enabled">Lifx</a></td>
+<td>X (newer models)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.ikea.com/global/en/newsroom/innovation/ikea-dirigera-matter-bridge-240911/">IKEA</a></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.gelighting.com/smart-pair-cync-and-matter">GE CYNC</a></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.lutron.com/en-US/pages/default.aspx">Lutron</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="https://assets.lutron.com/a/documents/clear_connect_technology_whitepaper.pdf">ClearConnect</a><br>2.4ghz</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://store.leviton.com/collections/decora-smart">Leviton</a></td>
+<td>X (newer models)</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.kasasmart.com/us/products/smart-switches/kasa-smart-wifi-light-switch-dimmer-ks225">TP Link Kasa</a></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.feit.com/products/smart-wi-fi-dimmer-dim-wifi#description">Feit</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.getzooz.com/switches-and-plugs/">ZooZ</a></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://inovelli.com/">Inovelli</a></td>
+<td>X</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<br>
+<br>
+<footer style="display: flex; justify-content: flex-start; padding: 10px;">
+  <button onclick="window.history.back()" style="background-color: #033772; color: rgb(245, 239, 245); border: none; padding: 10px 15px; border-radius: 10px; cursor: pointer; font-size: 16px;">
+      ← Go Back
+  </button>
+</footer>           
+            
+        </body>
+        </html>
