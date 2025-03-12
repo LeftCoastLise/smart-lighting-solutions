@@ -149,7 +149,23 @@
     padding: 0; /* Removes default padding */
     margin: 0; /* Removes default margin */
 }
+.disclaimer-footer {
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  color: #555;
+  border-top: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
 
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .disclaimer-footer {
+    font-size: 10px;
+    padding: 10px;
+  }
     </style>
 </head>
 </div>
@@ -703,7 +719,9 @@
 
             <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
          
-               
+     <footer class="disclaimer-footer">
+                Disclaimer: Be sure to check compatibility with your home as you consider any potential devices, products, or solutions.
+              </footer>             
          
         </body>
         </html>
